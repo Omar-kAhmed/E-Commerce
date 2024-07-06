@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log IN</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="home">
+        
+    <div class="navbar">
+
+        <ul>
+            <li class="active"><a href="home.html">Home</a></li>
+  
+            <li><a href="login.html">Sign IN</a></li>
+            <li><a href="#home2">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="" href="cart.html">Cart</a></li>
+
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="form">
+
+             <h1 class="title">Sign Up</h1> 
+            <form name="myform" action="https://www.youtube.com/watch?v=RuGmc662HDg&list=PLF9mJC4RrjIhS4MMm0x72-qWEn1LRvPuWv" method="POST" onsubmit=" return validateform()" >
+                <i id="emailicon" class="fa-solid fa-envelope"></i> <br>
+                <input type="email" name ="email"  id="email" placeholder="Email" required>  <br> 
+                <i class="fa-solid fa-user"></i> <br>
+                <input class="username" type="text" name="username" placeholder="Username" required> <br>
+                <i class="fa-solid fa-lock"></i><br>
+                <input type="password" name="password" placeholder="Password" required> <br> <br>
+                <button class="sign1">Sign up</button> 
+                <button class="sign2" type="submit" name="submit">Havae an Account? Sign In</button> <br>
+                <a id="sign" class="sign" href="forgot.html">Forgot Password?</a> <br> 
+            </form>
+        </div>
+
+
+        <footer>
+            <p> All copyright reserved @omarkhaledahmedov7 </p>
+        </footer>
+
+    </div>
+    
+    </div>
+
+    
+
+<script>
+
+    let title = document.querySelector('.title');
+    let signup= document.querySelector('.sign1');
+    let forgot= document.getElementById('.sign');
+    let email = document.getElementById('email');
+    let username = document.myform.username;
+    let signin=document.querySelector(".sign2");
+let icon = document.getElementById('emailicon');
+
+    signin.onclick= function(){
+
+        email.style.visibility= "hidden";
+        icon.style.visibility="hidden";
+        title.innerHTML="Sign In"
+          }
+
+    signup.onclick= function(){
+            
+            email.style.visibility= "visible";
+            icon.style.visibility="visible";
+            title.innerHTML="Sign Up"
+    }
+    
+    
+
+    function validateform()
+    {
+        var username = document.myform.username.value;
+        var password = document.myform.password.value;
+        var email = document.myform.email.value
+
+        if(username == "" || password == "")
+        {
+            alert("Please fill all the fields");
+            return false;
+
+        }
+        else if(username == "admin" && password == "admin" && email == "omarkhaledahmedov7@gmail.com")
+        {
+            alert("Login Successful, Welcome King");
+            return true;
+        }
+        else
+        {
+            alert("Login Failed, FUCK YOU");
+            return false;
+        }
+
+    
+    }
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

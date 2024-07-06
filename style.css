@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: "Playwrite US Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+list-style: none;
+text-decoration: none;
+}
+
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(images/062613231a04bcea7bdbe83a8ad1c63c.jpg);
+    background-position: center;
+background-size: cover;
+width: 100%;
+height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+a{
+    color: black;
+    cursor: pointer;
+}
+
+a:hover{
+    color: crimson;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+
+.content {
+    text-align: center;
+    color: rgb(142, 15, 115);
+font-weight: 900;
+    margin-left: 500px;
+    font-size: x-large;
+}
+
+h1{
+    margin-top: 270px;
+    
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 3s infinite alternate;
+	stroke-width: 2;
+	stroke: #8b1aaa;
+	font-size: 23px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(132, 32, 115, 0); stroke: rgb(92, 29, 106); }
+	80%  {fill: rgba(125, 45, 143, 0); stroke: rgb(93, 26, 109); stroke-width: 3; }
+	100% {
+		fill: rgb(97, 10, 100); stroke: rgba(13, 48, 103, 0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #ffffff04;
+}
+
+
+.products{
+text-align: center;
+font-size: 30px;
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: rgb(203 140 145);
+border-top: 1px solid #8b1aaaa0;
+border-bottom: 1px solid #8b1aaa96 ;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+
+
+
+.home2{
+    background-color: #f2d3d3f0;
+}
+
+.products .card1{
+    width: 270px;
+    height: 350px;
+    background-color: #8b1aaa;
+    margin: 20px;
+box-shadow: 4px 4px 4px 4px rgba(177, 102, 102, 0.632);
+border-radius: 10px;
+padding: 20px;
+cursor: pointer;
+ }
+
+
+.products .card1 img{
+    width: auto;
+    height: 100px;
+}
+
+img:hover{
+    transform: scale(1.15);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(51, 138, 21);
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.price{
+    color: rgb(44, 160, 44);
+}
+
+.active{
+
+    background-color: #8b1aaa;
+    color: white;
+}
+
+.payment{
+    width: 600px;
+    height: 560px;
+    background-color: rgba(0, 0, 0, 0.816); 
+position: absolute;
+top: 0%;
+right: 0%;
+bottom: 0;
+left: 0;
+margin: auto;
+padding: 20px;
+display: none;
+flex-direction:column ;
+font-size: 20px;
+box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.529);
+z-index: 1000;
+border-radius: 30px;
+top: 220%;
+color: white;
+} 
+
+
+.cardicon1{
+    display: flex;
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    position: absolute;
+}
+
+.cardicon2{
+    display: flex;
+    width: 70px;
+    height: auto;
+    margin: 10px;
+    position: absolute;
+    left: 85%;
+}
+
+
+.pay{
+    width: 140px;
+    height: 90px;
+    margin-left: 250px;
+    margin-top: 20px;
+
+}
+
+h3{
+    color: rgb(238, 100, 231);
+}
+
+.close{
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.close:hover{
+    background-color: crimson;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    color: darkgoldenrod;
+}
